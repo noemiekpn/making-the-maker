@@ -1,0 +1,50 @@
+body {
+	background-color: #e9e9e9;
+	margin: 0;
+}
+
+header {
+	background-color: #222222;
+	height: auto;
+	width: 100%;
+}
+
+footer {
+	background-color: #222222;
+}
+
+#logo img {
+	height: auto;
+	max-width: 15%;
+}
+
+#main-wrapper {
+}
+
+.nav-item {
+	color: white;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 30.25%;
+    padding-top: 25px;
+    max-width: 50%;
+}
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.center-horizontal {
+	margin: 0 auto;
+}
+
+/* Configurations for mobile screens */
+@media screen and (max-width: 480px) {
+    
+}
