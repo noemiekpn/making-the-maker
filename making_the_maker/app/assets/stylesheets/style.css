@@ -1,0 +1,70 @@
+/* Fonts */
+@font-face {
+	font-family: 'Hit The Road';
+	src: url('fonts/hit_the_road_regular.ttf')
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+	background-color: #e9e9e9;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+header {
+	background-color: #222222;
+	height: 150px;
+	width: 100%;
+}
+
+#logo {
+	float: left;
+	height: 100%;
+	margin: 0% 1%;
+}
+
+#logo img {
+	height: auto;
+	max-width: 15%;
+}
+
+nav {
+	float: right;
+	height: 50%;
+}
+.nav-item {
+	color: white;
+	float: left;
+	margin: 0% 5%;
+	font-family: 'Hit The Road';
+}
+
+#main-wrapper {
+	float: left;
+}
+
+footer {
+	background-color: #222222;
+	font-family: 'Hit The Road';
+	height: 50px;
+	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#footer-link-container {
+	margin: 16px 0px;
+	text-align: center;
+}
+
+.footer_link {
+	float: left;
+	margin: 0px 10px;
+}
+
+/* Configurations for mobile screens */
+@media screen and (max-width: 480px) {
+    
+}
