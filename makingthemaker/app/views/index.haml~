@@ -4,8 +4,6 @@
 <head>
 	<title>Making the Maker</title>
 	<link rel="stylesheet" type ="text/css" href="css/style.css">
-	<script src="https://fb.me/react-0.14.7.js"></script>
-	<script src="https://fb.me/react-dom-0.14.7.js"></script>
 </head>
 
 <body>
