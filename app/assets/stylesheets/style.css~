@@ -49,6 +49,10 @@ nav {
 	position: relative;
 }
 
+h1 {
+	font-family: 'Hit The Road';
+}
+
 footer {
 	background-color: #222222;
 	font-family: 'Hit The Road';

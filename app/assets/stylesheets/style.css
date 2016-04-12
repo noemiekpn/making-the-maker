@@ -29,15 +29,6 @@ header {
 	max-width: 100%;
 }
 
-nav {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	
-	height: 50%;
-	width: 50%;
-}
 .nav-item {
 	color: white;
 	float: left;
