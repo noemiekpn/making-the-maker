@@ -14,24 +14,37 @@
 		<a id="logo" class="navbar-brand" href="#">
 			<%= image_tag("maker_logo_original.png") %>
       	</a>
-		<nav id="navbar" class="navbar-collapse collapse">		
-			<ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Media</a></li>
-              <li><a href="#">Publications</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
+		
+		<nav id="header-nav" class="navbar navbar-static-top">
+			<div id="navbar" class="navbar-collapse collapse">			
+				<ul class="nav navbar-nav nav-list">
+		          <li class="dropdown nav-item">
+		            <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+		            <ul class="dropdown-menu">
+		              <li><a href="#">Find a project</a></li>
+		              <li><a href="#">Find materials</a></li>
+		              <li><a href="#">Find lesson plans</a></li>
+		            </ul>
+		          </li>
+		          <li class="dropdown nav-item">
+		          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media</a>
+		          	<ul class="dropdown-menu">
+		              <li><a href="#">News</a></li>
+		              <li><a href="#">Blog</a></li>
+		              <li><a href="#">Gallery</a></li>
+		            </ul>
+		          </li>
+		          <li class="nav-item"><a href="#">Publications</a></li>
+		          <li class="dropdown nav-item">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+		            <ul class="dropdown-menu">
+		              <li><a href="#">Philosphy</a></li>
+		              <li><a href="#">Timeline</a></li>
+		              <li><a href="#">Meet the team</a></li>
+		            </ul>
+		          </li>
+		        </ul>
+			</div>
 		</nav>
 	</header>
 	
