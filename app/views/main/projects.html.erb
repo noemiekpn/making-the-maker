@@ -1,3 +1,17 @@
+
+<style type="text/css">
+	.free-wall {
+			margin: 15px;
+			margin: auto;
+		}
+	.cell {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	background-color: #222;
+	}
+</style>
 <script type="text/javascript" src="http://vnjs.net/www/project/freewall/example/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="http://vnjs.net/www/project/freewall/freewall.js"></script>
 		
@@ -15,25 +29,15 @@
 
 		<script type="text/javascript">
 
-			var temp1 = "<div class='cell' style='width:{width}px; height: {height}px; background-image: url(<%= asset_path '1.jpg'%>)'></div>";
-			var temp2 = "<div class='cell' style='width:{width}px; height: {height}px; background-image: url(<%= asset_path '1.jpg'%>)'></div>";
-			var temp3 = "<div class='cell' style='width:{width}px; height: {height}px; background-image: url(<%= asset_path '3.jpg'%>)'></div>";
-			var temp41 = "<div class='cell' style='width:{width}px; height: {height}px; background-image: url(<%= asset_path '4.jpg'%>)'>";
-			var temp4 = temp41;
-
-
-
-			var test1 = '<div class="cell"><a href="project_details.html?id=1"><%= image_tag("2.jpg", width: "200", height: "200") %></a></div>';
-
-
-
 			
-			var w = 200, h = 200, html = '', limitItem = 4	;
-			html += test1;
-			html += temp1.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
-			html += temp2.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
-			html += temp3.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
-			html += temp4.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
+			
+			var w = 200, h = 200, html = ''	;
+			<% (1..4).step(1) do |num| %>
+  				var temp = '<div class="cell" style="width:{width}px; height: {height}px;" ><a href="project_details.html?id='+ '<%= "#{num}"%>' +'"><%= image_tag("#{num}.jpg", width: "200", height: "200") %></a></div>';
+
+				html += temp.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
+			<% end %>
+
 			$("#freewall").html(html);
 
 			var wall = new Freewall("#freewall");
