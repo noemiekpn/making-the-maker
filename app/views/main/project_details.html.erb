@@ -1,12 +1,12 @@
- <div id="content-wrapper" class="center-horizontal">
-<%
- 	params.each do |key,value|
-  Rails.logger.warn "Param #{key}: #{value}"
-end
-%>
+<div id="content-wrapper" class="center-horizontal">
+  <%
+   	params.each do |key,value|
+    project = Project.find_by_id(value).title
+    Rails.logger.warn "Title: #{project}"
 
+  end
+  %>
 
-
-
+  
 
 </div>

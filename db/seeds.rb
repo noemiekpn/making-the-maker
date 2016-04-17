@@ -7,8 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 projects = [
-	{	:title => 'Title 1', 
-		:description => 'This model of the is a fun way to not only recognize and identify each planet\'s place in the solar system, but to see how each one rotates around the sun.'},
-	{	:title => 'Title 2',
-		:description => 'This model of the is a fun way to not only recognize and identify each planet\'s place in the solar system, but to see how each one rotates around sun.'},
+	{	:title => 'Title 1', :description => 'Description 1.', :image_path => '1.jpg', :materials => "A, B, C", :instructions => "1, 2, 3"},
+	{	:title => 'Title 2', :description => 'Description 2.', :image_path => '2.jpg', :materials => "A, B, C", :instructions => "1, 2, 3"},
+	{	:title => 'Title 3', :description => 'Description 3.', :image_path => '3.jpg', :materials => "A, B, C", :instructions => "1, 2, 3"}
 ]
+
+projects.each do |project|
+  Project.create!(project)
+end
