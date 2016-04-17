@@ -1,7 +1,10 @@
- <div id="content-wrapper" class="center-horizontal">
-<%
- 	params.each do |key,value|
-  Rails.logger.warn "Param #{key}: #{value}"
-end
-%>
+<div id="content-wrapper" class="center-horizontal">
+  <%
+   	params.each do |key,value|
+    Rails.logger.warn "Param #{key}: #{value}"
+  end
+  %>
+
+  <h1> Details about <%= "#{Project.find_by_id(1).title}" %> </h1>
+
 </div>

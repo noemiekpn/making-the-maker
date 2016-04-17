@@ -1,4 +1,5 @@
 class Project < ActiveRecord::Base
-  attr_accessible :title, :description, :grade
+  def project_params
+    params.require(:project).permit(:title, :description, :grade, :image_path, :materials, :instructions)
+  end
 end
-
