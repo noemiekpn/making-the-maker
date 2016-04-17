@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'main/publications', :to => 'main#publications'
   get 'main/about_us', :to => 'main#about_us'
   get 'main/contact_us', :to => 'main#contact_us'
+  get 'main/project_details', :to => 'main#project_details'
 end
