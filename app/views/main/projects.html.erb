@@ -1,26 +1,5 @@
-<div id="freewall" class="free-wall"></div>
+<div id="content-wrapper" class="center-horizontal">
+	<h1>Projects</h1>
 
-<script type="text/javascript">
-
-	var temp = "<div class='cell' style='width:{width}px; height: {height}px; background-image: url(./images/volcano.png)'></div>";
-	var w = 200, h = 200, html = '', limitItem = 49;
-	for (var i = 0; i < limitItem; ++i) {
-		html += temp.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
-	}
-	$("#freewall").html(html);
-
-	var wall = new Freewall("#freewall");
-	wall.reset({
-		selector: '.cell',
-		animate: true,
-		cellW: 200,
-		cellH: 200,
-		onResize: function() {
-			wall.refresh();
-		}
-	});
-	wall.fitWidth();
-	// for scroll bar appear;
-	$(window).trigger("resize");
-</script>
-
+	<div> Howdy, y'all </div>
+</div>
