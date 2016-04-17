@@ -1,24 +1,35 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+/* General Style */
+
+.center-horizontal {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
 body {
 	background-color: #e9e9e9;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	margin: 0;
+	
+	position: relative;
+	min-height: 100%;
+	mar	gin: 0;
 }
 
 header {
-	background-color: #222222;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	height: 150px;
+	height: 200px;
+	margin-bottom: 20px;
 	position: relative;
 	width: 100%;
+	z-index: 1000;
 }
 
 #logo {
-	float: left;
+	background-color: #222;
+	box-shadow: 0px 3px 10px #888;
 	height: 100%;
 	margin: 0% 1%;
 }
@@ -29,12 +40,12 @@ header {
 }
 
 #header-nav {
-	width: 50%;
+	background-color: #222;
+	box-shadow: 0px 3px 10px #888;
 	margin: 0%;
 
-	position: absolute;
-	right: 0;
-	bottom: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 }
 
 #nav-list { 
@@ -46,7 +57,7 @@ header {
 	margin: 0% 5%;
 }
 
-.nav-item > li > a {
+.nav-item > a {
 	color: white;
 }
 
@@ -56,17 +67,45 @@ header {
 
 #main-wrapper {
 	position: relative;
+	padding-bottom: 100px;
+}
+
+#content-wrapper {
+	background-color: #fff;
+	box-shadow: 0px 3px 10px #888;
+	
+	height: auto;
+	min-height: 100%;
+	padding: 5% 10%;
+	position: relative;
+	width: 80%;
 }
 
 h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.general-button {
+	background-color: #222;
+	border-radius: 3px;
+	padding: 10px;
+	width: 100px; 
+}
+
+.carousel-inner > .item > .slide-img { height: unset; }
+
+.main-icon {
+	width: 140px;
+	height: 140px;
 }
 
 footer {
-	background-color: #222222;
-	font-family: 'Hit The Road';
-	height: 50px;
+	background-color: #222;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	height: 80px;
 	
 	position: absolute;
 	bottom: 0;
@@ -76,11 +115,22 @@ footer {
 
 #footer-link-container {
 	text-align: center;
+	margin: 0;
 }
 
-.footer_link {
+.footer-link {
 	float: left;
+	width: 30%;
 	margin: 0px 10px;
+}
+
+.footer-link #tamu-logo {}
+.footer-link #nsf-logo {}
+
+/* Lists */
+.list-item {
+	text-align: justify;
+	margin-bottom: 10px;
 }
 
 /* Configurations for mobile screens */

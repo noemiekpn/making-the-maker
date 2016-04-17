@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+projects = [
+	{	:title => 'Title 1', 
+		:description => 'This model of the is a fun way to not only recognize and identify each planet\'s place in the solar system, but to see how each one rotates around the sun.'},
+	{	:title => 'Title 2',
+		:description => 'This model of the is a fun way to not only recognize and identify each planet\'s place in the solar system, but to see how each one rotates around sun.'},
+]
