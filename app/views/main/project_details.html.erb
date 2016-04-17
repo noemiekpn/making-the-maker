@@ -5,6 +5,25 @@
   end
   %>
 
-  <h1> Details about <%= "#{Project.find_by_id(1).title}" %> </h1>
+  <div class="project-container">
+    <div class="project-thumbnail-box">
+      <%= image_tag("#{Project.find_by_id(1).image_path}") %>
+    </div>
+
+    <div class="project-header-content">
+      <div class="project-header-links">
+        <%= link_to("Download", "#") %>
+        <%= link_to("Print", "#") %>
+      </div>
+      <h1> Details about <%= "#{Project.find_by_id(1).title}" %> </h1>
+      <p> <%= "#{Project.find_by_id(1).description}" %> </p>
+    </div>
+  </div>
+
+  <div class="project-container">
+  </div>
+
+  <div class="project-container">
+  </div>
 
 </div>

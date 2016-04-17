@@ -9,6 +9,10 @@
 				<div class="float-left">
 						<h1><a href="">Free Wall</a></h1>
 						<div class='target'>Creating dynamic grid layouts.</div>
+						<%
+						  @projects.each do |project|
+							  link_to("Project #{project.id}", main_project_details_path(project))
+						%>
 				</div>
 			</div>
 		</div>
