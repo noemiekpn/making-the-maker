@@ -1,7 +1,9 @@
 <div id="content-wrapper" class="center-horizontal">
   <%
-   	params.each do |key,value|
-    Rails.logger.warn "Param #{key}: #{value}"
+  params.each do |key,value|
+    title = "Project.find_by_id(#{value}).title"
+    Rails.logger.warn "Title: #{value}"
+    Rails.logger.warn "Title: #{title}"
   end
   %>
 
@@ -25,5 +27,4 @@
 
   <div class="project-container">
   </div>
-
 </div>

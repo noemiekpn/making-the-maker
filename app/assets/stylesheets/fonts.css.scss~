@@ -1,4 +1,0 @@
-@font-face {
-	font-family: 'Hit The Road';
-	src: font-url('fonts/hit_the_road_regular.ttf') format('truetype');
-}
