@@ -52,6 +52,7 @@ footer {
 #header-nav {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
+	font-size: 16pt;
 }
 
 #nav-list {
@@ -94,11 +95,6 @@ footer {
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 20px;
-}
-
-.half-container {
-	float: left;
-	width: 50%;
 }
 
 /* This container has a left image and description */
@@ -154,9 +150,17 @@ h1, h2, h3, h4 {
 
 .footer-link {
 	float: left;
-  height: 100%;
-	width: 30%;
-	margin: 0px 10px;
+  height: 80%;
+	width: auto;
+
+	padding: 0 20px;
+	margin: 8px auto;
+}
+
+.footer-divider {
+	border-color: #fff;
+	border-style: solid;
+  border-width: 0px 1px 0px 0px;
 }
 
 .footer-link img {

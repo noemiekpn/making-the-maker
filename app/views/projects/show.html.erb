@@ -1,15 +1,7 @@
-<div id="content-wrapper" class="center-horizontal">
-  <%
-  params.each do |key,value|
-    title = "Project.find_by_id(#{value}).title"
-    Rails.logger.warn "Title: #{value}"
-    Rails.logger.warn "Title: #{title}"
-  end
-  %>
-
+<div id="content-wrapper">
   <div class="project-container">
     <div class="project-thumbnail-box">
-      <%= image_tag("#{Project.find_by_id(1).image_path}") %>
+      <%= image_tag("#{@project.image_path}") %>
     </div>
 
     <div class="project-header-content">

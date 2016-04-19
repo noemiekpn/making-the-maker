@@ -1,4 +1,4 @@
-class ProjectController < ApplicationController
+class ProjectsController < ApplicationController
   def list
     @projects = Project.all
   end

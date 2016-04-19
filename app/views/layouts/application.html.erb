@@ -11,9 +11,7 @@
 </head>
 <body>
 	<header>
-		<a id="logo" class="navbar-brand" href="index.html">
-			<%= image_tag("maker_logo_original.png", alt: "Maker logo") %>
-	  </a>
+		<%= link_to image_tag("maker_logo_original.png", alt: "Maker logo"), main_index_path, id: "logo", class: "navbar-brand" %>
 
 		<nav id="header-nav">
 			<ul id="nav-list">
@@ -21,10 +19,10 @@
 				<%= link_to "Projects", main_projects_path %>
 			  </li>
 			  <li class="nav-item">
-				<%= link_to "Media", main_projects_path %>
+				<%= link_to "Media", main_media_path %>
 			  </li>
 			  <li class="nav-item">
-				<%= link_to "Publications", main_projects_path %>
+				<%= link_to "Publications", main_publications_path %>
 			  </li>
 			  <li class="nav-item">
 				<a href="about_us.html">About Us</a>
@@ -40,10 +38,10 @@
 
 	<footer>
 		<div class="footer-link">
-			<%= link_to image_tag("tamu_logo.png", alt: "Texas A&M logo", id: "tamu-logo"), "http://www.tamu.edu", target: "_blank" %>
+			<%= link_to image_tag("tamu_logo.png", alt: "Texas A&M logo"), "http://www.tamu.edu", target: "_blank" %>
 		</div>
 		<div class="footer-link">
-			<%= link_to image_tag("nsf_logo.png", alt: "NSF logo", id: "nsf-logo"), "http://www.nsf.gov", target: "_blank" %>
+			<%= link_to image_tag("nsf_logo.png", alt: "NSF logo"), "http://www.nsf.gov", target: "_blank" %>
 		</div>
 	</footer>
 
