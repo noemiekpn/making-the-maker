@@ -9,13 +9,15 @@
 	transform: translate(-50%, 0);
 }
 
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
 	background-color: #e9e9e9;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-
-	position: relative;
-	min-height: 100%;
 }
 
 header {
@@ -84,9 +86,9 @@ header {
 
 #content-wrapper {
 	background-color: #fff;
-	box-shadow: 0px 3px 10px #888;
+	box-shadow: 0px 0px 5px #888;
 
-	min-height: 100%;
+	height: 100%;
 	padding: 5% 10%;
 	position: relative;
 	width: 80%;
@@ -156,14 +158,6 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	height: 80px;
-
-	text-align: justify;
-	text-justify: distribute-all-lines;
-
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
 }
 
 .footer-link-container {

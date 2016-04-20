@@ -55,12 +55,16 @@
   <!-- Three columns of text below the carousel -->
   <div class="banner-container">
     <div class="col-lg-4">
-      <%= link_to image_tag("maker_logo_original.png", class: "img-circle main-icon", alt: "Projects icon"), main_projects_path  %>
+      <%= link_to main_projects_path do %>
+        <div class="img-circle main-icon" style="background-position: 0px 0px;"></div>
+      <% end %>
       <p>Find projects and class plans</p>
     </div>
 
     <div class="col-lg-4">
-      <%= link_to image_tag("maker_logo_original.png", class: "img-circle main-icon", alt: "Media icon"), main_media_path %>
+      <%= link_to main_media_path do %>
+        <div class="img-circle main-icon" style="background-position: -140px 0px;"></div>
+      <% end %>
       <p>See more about the Making the Maker</p>
     </div>
 
