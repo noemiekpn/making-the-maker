@@ -1,2 +1,6 @@
 [o:Set:
+<<<<<<< HEAD
 @hash{I"environment-version:ETTI"environment-paths;TTI"rails-env;TTI"Lprocessors:type=text/css&file_type=text/css&engines=.scss&pipeline=self;TTI"8file-digest://app/assets/stylesheets/style.css.scss;TTI"&actioncontroller-asset-url-config;TTI"#file-digest://app/assets/fonts;TTI"5file-digest://app/assets/fonts/main_icon_sprites;TTI"$file-digest://app/assets/images;TTI"6file-digest://app/assets/images/main_icon_sprites;TTI":file-digest://app/assets/images/main_icon_sprites.png;TTI"2processors:type=image/png&file_type=image/png;TT
+=======
+@hash{I"environment-version:ETTI"environment-paths;TTI"rails-env;TTI"Lprocessors:type=text/css&file_type=text/css&engines=.scss&pipeline=self;TTI"8file-digest://app/assets/stylesheets/style.css.scss;TTI"&actioncontroller-asset-url-config;TT
+>>>>>>> 82b0ac3d51b2246b3e4099f68743b04db3485bae
