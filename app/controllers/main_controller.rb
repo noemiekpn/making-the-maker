@@ -8,4 +8,13 @@ class MainController < ApplicationController
     @projects = Project.all
   end
 
+  def publications
+  end
+
+  def about_us
+  end
+
+  def find_us
+  end
+
 end
