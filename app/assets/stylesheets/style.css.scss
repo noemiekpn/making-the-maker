@@ -182,7 +182,6 @@ h1, h2, h3, h4 {
 
 #contact-links div {
 	display: inline-block;
-	margin: 15px;
 }
 
 #contact-links a {
@@ -201,7 +200,6 @@ h1, h2, h3, h4 {
 #contact-links p {
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 60px;
 }
 
 .main-icon {
@@ -222,7 +220,7 @@ footer {
 	font-weight: 700;
 
 	position: absolute;
-	height: 80px;
+	height: 60px;
 	width: 100%;
 }
 
@@ -237,9 +235,8 @@ footer {
   *display: inline;
   zoom: 1;
 
-	height: 80%;
-	margin: 8px auto;
-	padding: 0 20px;
+	height: 100%;
+	padding: 6px 20px;
 }
 
 .footer-link img {

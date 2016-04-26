@@ -6,18 +6,22 @@
 		margin: 15px;
 	}
 
-	.cell {
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: absolute;
-		background-color: #222;
+	.cell:hover {
+		background-color: #f2f2f2;
 	}
 
-	.cell:hover {
-		opacity: 0.5;
-    filter: alpha(opacity=50);
+	.cell img {
+		display: block;
+		height: 60%;
+		width: auto;
+		max-width: 60%;
+		margin: 15px auto;
 	}
+
+	.cell p {
+		text-align: center;
+	}
+
 </style>
 
 <div id="content-wrapper">
@@ -29,9 +33,13 @@
 		var w = 200, h = 150, html = ''	;
 		<% @projects.each do |project| %>
 				var boxOpen = '<div class="cell" style="width:{width}px; height: {height}px; margin-bottom: 15px;" >';
+
 				var boxLink = '<%= link_to image_tag("projects/#{project.image_path}", height: "100%", width: "100%"), project_path(project) %>'
 				var boxLabel = '<p> <%= project.title %> </p>'
-			  var boxClose = '</div>';
+
+
+				var boxClose = '</div>';
+
 				var box = boxOpen + boxLink + boxLabel + boxClose;
 
 			html += box.replace(/\{height\}/g, h).replace(/\{width\}/g, w);
